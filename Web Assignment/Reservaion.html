@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserve a table at Fresh Bites Cafe for breakfast, lunch or a special occasion.">
+  <title>Reservations | Fresh Bites Cafe</title>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Fresh Bites Cafe - Home">
+        <img src="images/logo.svg" alt="Fresh Bites Cafe logo" width="48" height="48">
+        <span>Fresh Bites<small>Cafe</small></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open or close the navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="active" href="reservations.html" aria-current="page">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Reserve a Table</h1>
+        <p>Tell us when you are coming and we will have your table ready.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split align-start">
+        <form class="form" action="mailto:hello@freshbitescafe.com" method="post" enctype="text/plain">
+          <h2>Booking details</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">Full name</label>
+              <input type="text" id="res-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label for="res-phone">Phone number</label>
+              <input type="tel" id="res-phone" name="phone" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="res-email">Email address</label>
+            <input type="email" id="res-email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="res-time">Time</label>
+              <input type="time" id="res-time" name="time" min="07:00" max="20:00" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-guests">Number of guests</label>
+              <select id="res-guests" name="guests" required>
+                <option value="">Select...</option>
+                <option>1 - 2 guests</option>
+                <option>3 - 4 guests</option>
+                <option>5 - 8 guests</option>
+                <option>9 or more</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="res-occasion">Occasion</label>
+              <select id="res-occasion" name="occasion">
+                <option>Casual meal</option>
+                <option>Birthday</option>
+                <option>Business meeting</option>
+                <option>Study session</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="res-notes">Special requests</label>
+            <textarea id="res-notes" name="notes" placeholder="Allergies, seating preferences, celebrations..."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Request Reservation</button>
+        </form>
+
+        <aside>
+          <h2>Good to know</h2>
+          <ul class="info-list">
+            <li><span class="icon" aria-hidden="true">&#128339;</span><div><strong>Opening hours</strong>Mon - Fri 7:00 AM - 8:00 PM<br>Saturday 8:00 AM - 9:00 PM<br>Sunday 9:00 AM - 6:00 PM</div></li>
+            <li><span class="icon" aria-hidden="true">&#128101;</span><div><strong>Large groups</strong>For 9 or more guests, please call us so we can arrange the best seating.</div></li>
+            <li><span class="icon" aria-hidden="true">&#9201;</span><div><strong>Table holding</strong>We hold tables for 15 minutes after your booking time.</div></li>
+            <li><span class="icon" aria-hidden="true">&#128222;</span><div><strong>Prefer to call?</strong><a href="tel:+256700000000">+256 700 000 000</a></div></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="images/logo.svg" alt="" width="44" height="44">
+            <span>Fresh Bites Cafe</span>
+          </div>
+          <p>Fresh food, great coffee and a warm welcome, every single day.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Opening Hours</h3>
+          <ul class="footer-links">
+            <li>Mon - Fri: 7:00 AM - 8:00 PM</li>
+            <li>Saturday: 8:00 AM - 9:00 PM</li>
+            <li>Sunday: 9:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visit &amp; Connect</h3>
+          <ul class="footer-links">
+            <li>Plot 12, Main Street, Kampala</li>
+            <li><a href="tel:+256700000000">+256 700 000 000</a></li>
+            <li><a href="mailto:hello@freshbitescafe.com">hello@freshbitescafe.com</a></li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a> |
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 Fresh Bites Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
